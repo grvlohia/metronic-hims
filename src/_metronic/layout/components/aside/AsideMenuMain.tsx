@@ -16,6 +16,16 @@ export function AsideMenuMain() {
         title={intl.formatMessage({id: 'MENU.DASHBOARD'})}
         fontIcon='bi-app-indicator'
       />
+      <AsideMenuItem 
+        to='/administration'
+        icon='/media/icons/duotone/Tools/Compass.svg'
+        title='Administration'
+      />
+      <AsideMenuItem 
+        to='/patient'
+        icon='/media/icons/duotone/Communication/Group.svg'
+        title='Patient'
+      />
       <AsideMenuItem
         to='/builder'
         icon='/media/icons/duotone/Interface/Settings-02.svg'

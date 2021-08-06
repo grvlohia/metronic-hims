@@ -15,14 +15,14 @@ import {DefaultLayoutConfig} from './DefaultLayoutConfig'
 const LAYOUT_CONFIG_KEY = process.env.REACT_APP_BASE_LAYOUT_CONFIG_KEY || 'LayoutConfig'
 
 export function getLayout(): ILayout {
-  const ls = localStorage.getItem(LAYOUT_CONFIG_KEY)
-  if (ls) {
-    try {
-      return JSON.parse(ls) as ILayout
-    } catch (er) {
-      console.error(er)
-    }
-  }
+  // const ls = localStorage.getItem(LAYOUT_CONFIG_KEY)
+  // if (ls) {
+  //   try {
+  //     return JSON.parse(ls) as ILayout
+  //   } catch (er) {
+  //     console.error(er)
+  //   }
+  // }
   return DefaultLayoutConfig
 }
 
